@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import { CustomButton } from "./components/Button.mist";
 
 export default function Home() {
   return (
@@ -9,6 +10,9 @@ export default function Home() {
           Get started by editing&nbsp;
           <code className={styles.code}>src/app/page.tsx</code>
         </p>
+        <CustomButton variant="primary">Primary</CustomButton>
+        <CustomButton variant="secondary">Secondary</CustomButton>
+        <CustomButton danger>Danger</CustomButton>
         <div>
           <a
             href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"

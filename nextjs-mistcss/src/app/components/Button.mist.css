@@ -1,0 +1,19 @@
+@scope (button.custom-button) {
+    :scope {
+      background: black;
+      color: white;
+  
+      &[data-variant='primary'] {
+        background: blue;
+      }
+  
+      &[data-variant='secondary'] {
+        background: gray;
+      }
+
+      &[data-danger] {
+        background: red;
+        color: white;
+      }
+    }
+  }
